@@ -1,0 +1,335 @@
+  
+@import "_colors"
+@import "_about"
+@import "_skills"
+@import "_projects"
+@import "_contacts"
+@import "_footer"
+
+html,
+body
+    width: 100vw
+    max-width: 100%
+    height: 100vh
+    margin: 0
+    padding: 0
+    
+body
+    cursor: url('../images/cursor.svg'), auto
+
+.home 
+    padding: 0 70px
+    max-width: 1440px
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    font-family: $inconsolata-font
+    background-color: $white 
+    margin: 0 auto
+    &__menu 
+        padding-top: 50px 
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__navigation 
+        height: 28px
+        display: flex
+        flex-direction: row
+        align-content: center
+        justify-content: space-between
+        font-size: 24px
+        line-height: 26px
+        font-weight: 600
+        a 
+            margin: 0 32px
+            font-weight: 500
+            text-decoration: none
+            text-transform: lowercase
+            color: $black
+        a:hover 
+            padding-bottom: 3px
+            border-bottom: 3px solid $blue         
+        .resume
+            display: flex
+            align-items: center
+            a 
+                margin: 0 0 0 32px
+            img 
+                width: 20px
+                height: 20px
+                margin-left: 10px
+    &__hamburger, &__mobile-menu
+        display: none 
+    &__content 
+        width: 100%
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        color: $black
+    &__text 
+        width: 620px
+        font-size: 48px
+        line-height: 48px
+        font-weight: 600
+        span 
+            color: $blue
+    &__images
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        img 
+            z-index: 9
+    &__blue-blur
+        width: 540px
+        height: 540px
+        background: $blue-background
+        filter: blur(70px)
+        border-radius: 50%
+        position: absolute
+    &__blue-blur-midle,
+        width: 160px
+        height: 160px
+        background: $blue-background
+        filter: blur(25px)
+        border-radius: 50%
+        right: 740px
+        bottom: 400px
+        position: absolute   
+    &__blue-blur-small
+        width: 90px
+        height: 90px
+        right: 600px
+        bottom: -60px
+        background: $blue-background
+        filter: blur(25px)
+        border-radius: 50%
+        position: absolute    
+    &__down-content
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-bottom: 50px
+        position: relative
+    &__left 
+        display: flex
+        align-items: center
+        left: 0
+        position: absolute
+        a
+            font-size: 24px
+            font-family: $inconsolata-font
+            font-weight: 500
+            text-decoration: none
+            color: #272727
+            transition: transform .2s
+        a:nth-child(2) 
+            margin: 0 36px
+        a:hover  
+            color: $blue  
+            transform: scale(1.1)
+    &__center
+        display: flex
+        justify-content: center
+        align-items: center
+        background: none
+        .scroll-down
+            width: 60px
+            height: 60px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: none
+        .first-line, .second-line 
+            margin: 8px
+            width: 4px
+            height: 32px
+            background: black
+            border-radius: 5px
+            animation: move 1.6s infinite ease-in-out
+        .first-line
+            transform: rotate(-45deg)   
+        .second-line
+            transform: rotate(45deg)    
+        @keyframes move
+            0% 
+                margin-top: 0
+            50% 
+                margin-top: 60px
+            100%
+                margin-top: 0  
+        .scroll-down.clicked 
+            .first-line, .second-line 
+                animation: none
+    &__right
+        right: 0    
+        position: absolute  
+        h1 
+            font-size: 32px
+            font-family: $inconsolata-font
+            font-weight: 600  
+
+// Styles for scroll animation 
+.hidden 
+    opacity: 0
+.show 
+    opacity: 1
+@media (prefers-reduced-motion: no-preference)
+   .hidden 
+        transition: all 1.5s      
+
+@media (min-width: 1201px) and (max-width: 1400px)
+    .home 
+        padding: 40px 60px 0 
+        &__menu
+            padding-top: 0
+        &__navigation 
+            font-size: 20px
+        &__text
+            width: 492px
+            font-size: 40px
+            line-height: 40px
+        &__images 
+            img, &__blue-blur  
+                width: 460px
+                height: 460px
+        &__blue-blur-midle
+            margin-right: 936px
+            margin-bottom: 408px
+        &__down-content 
+            padding-bottom: 40px
+        &__left
+            a 
+                font-size: 20px
+        &__center
+            .scroll-down
+                width: 48px
+                height: 48px
+            .first-line, .second-line 
+                width: 4px
+                height: 26px
+                margin: 6px
+        &__right
+            font-size: 24px
+
+@media screen and (max-width: 1200px)
+    .home
+        justify-content: space-between
+        padding: 32px 24px 0
+        &__logo
+            width: 140px
+            height: 60px
+        &__navigation 
+            display: none
+        &__menu 
+            padding-top: 0
+        &__hamburger    
+            padding: 0
+            width: 36px
+            height: 36px
+            display: block
+            cursor: pointer
+            appearance: none
+            background: none
+            outline: none
+            border: none
+            z-index: 999
+            position: relative
+        .bar
+            content: ""
+            margin: 5px 0 5px 40%
+            width: 60%
+            height: 3px
+            display: block
+            background-color: $blue
+            transition: 0.4s
+            border-radius: 5px
+        &__hamburger::before, &__hamburger::after
+            content: ""
+            margin: 3px 0
+            width: 100%
+            height: 3px
+            display: block
+            transition: 0.4s
+            border-radius: 5px
+            background-color: $black
+        &__hamburger.is-active 
+            .bar 
+                opacity: 0
+        &__hamburger.is-active::before 
+            transform: rotate(-45deg) translate(-7px, 0)
+            background-color: $white
+        &__hamburger.is-active::after 
+            transform: rotate(45deg) translate(-10px, -5px)
+            background-color: $white
+        &__mobile-menu
+            width: 100%
+            min-height: 100vh
+            top: 0
+            left: 100%
+            display: block
+            z-index: 99
+            background-color: $blue
+            position: fixed
+        &__mobile-menu.is-active
+            left: 0
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            a
+                font-size: 24px
+                font-family: "Inconsolata", monospace
+                font-weight: 500
+                color: $white
+                text-decoration: none
+                margin-bottom: 8%
+            a:last-child 
+                margin-bottom: 0
+        &__content
+            flex-direction: column
+        &__text
+            width: auto
+            font-size: 42px
+            line-height: 42px
+        &__images
+            margin-top: 15%
+            img 
+                width: 388px
+                height: 388px
+        &__blue-blur
+            width: 440px
+            height: 440px
+        &__blue-blur-midle, &__blue-blur-small
+            display: none
+        &__left, &__right
+            display: none
+
+@media (max-width: 767px) 
+    .home 
+        &__content
+            margin-top: 18%
+        &__text
+            font-size: 28px
+            line-height: 28px
+        &__images
+            margin-top: 60px
+            img 
+                width: 288px
+                height: 288px
+        &__blue-blur
+            width: 280px
+            height: 280px
+            filter: blur(38px)
+        &__center
+            .scroll-down
+                width: 40px
+                height: 40px
+            .first-line, .second-line 
+                margin: 6px
+                width: 4px
+                height: 26px
+

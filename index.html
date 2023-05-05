@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elvira Dolynna</title>
+  <link rel="icon" type="image/x-icon" href="images/beret.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="certification.html" rel="import">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161135981-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-161135981-1');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="animations.js"></script>
+</head>
+<body>
+
+  <!-- Home block -->
+  <div class="home" id="home">
+    <header class="home__menu">
+      <img class="home__logo" src="images/edolynna-logo.svg" alt="edolynna-logo">
+      <nav class="home__navigation">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <div class="resume">
+          <a href="images/elvira-dolynna-resume.pdf" download >resume</a>
+          <img src="images/download.svg" alt="download resume">
+        </div>
+      </nav>
+      <button class="home__hamburger">
+        <div class="bar"></div>
+      </button>
+      <nav class="home__mobile-menu">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <a href="images/elvira-dolynna-resume.pdf" download >resume</a>
+        <a href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
+        <a href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
+        <a href="https://www.instagram.com/eirafane/" target="_blank" target="_blank">instagram</a>
+      </nav>
+    </header>
+   
+    <main class="home__content">
+      <div class="home__text">
+        Hello World,<br/>
+        I'm <span id="name"></span><br/>
+        a Front-end Developer
+      </div>
+      <div class="home__images">
+        <img src="images/edolynna-hi.svg" alt="edolynna-hi">
+        <div class="home__blue-blur"></div>
+        <div class="home__blue-blur-midle"></div>
+        <div class="home__blue-blur-small"></div>
+      </div>
+    </main>
+
+    <div class="home__down-content">
+      <div class="home__left">
+        <a href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
+        <a href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
+        <a href="https://www.instagram.com/eirafane/" target="_blank" target="_blank">instagram</a>
+      </div>
+      <div class="home__center">
+        <a href="#about" class="scroll-down" onclick="arrowClicked();">
+          <span class="first-line"></span>
+          <span class="second-line"></span>
+        </a>
+      </div>
+      <div class="home__right">
+        <h1>ENG</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About block -->
+  <section class="about" id="about">
+    <div class="about__image">
+      <div class="circle"></div>
+      <img class="elvira-image" src="images/edolynna-about.svg" alt="edolynna-about">
+    </div>
+    <div class="about__text hidden">
+      <p>Welcome to my website. I'm Elvira Dolynna and a Front-end Developer with Magento experience. On this moment I already have a Computer Science Bachelor degree and 2 years of work experience.</p>
+      <div class="about__study">
+        <p>Education:</p>
+        <p>Computer Science 2018 - 2022 
+          <br/> 
+          State University of Telecommunications 
+          <br/> 
+          Kyiv, Ukraine 
+        </p>
+      </div>
+      <div class="about__experience">
+        <p>Work experience:</p>
+        <p>Front-end Developer, ODDITY 
+          <br/> 
+          January 2021 - present
+        </p>
+      </div>
+      <p>I open for new communication and new opportunity. My main principle in life is not to stop and always grow as a person and a professional.</p>
+    </div>
+  </section>
+
+  <!-- Skills block -->
+  <section class="skills" id="skills">
+    <div class="skills__top">
+      <div></div>
+      <div></div>
+      <div>JavaScript</div>
+      <div>SASS</div>
+      <div>PHP</div>
+      <div>English</div>
+      <div>Ukrainian</div>
+      <div>
+        <a href="certification.html">Certification</a>
+      </div>
+    </div>
+    <div class="skills__middle">
+      <div>jQuery</div>
+      <div>Git</div>
+      <div></div>
+      <div>HTML / CSS</div>
+      <div>Magento</div>
+      <div>SQL</div>
+      <div>Figma</div>
+      <div>Zeplin</div>
+    </div>
+    <div class="skills__down">
+      <div>GitHub</div>
+      <div>BitBucket</div>
+      <div>Jira</div>
+      <div>Agile</div>
+      <div></div>
+    </div>
+
+    <div class="skills__mobile">
+      <div class="skills__section">
+        <ul>
+          <li>HTML / CSS</li>
+          <li>SASS</li>
+          <li>LESS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>React</li>
+        </ul>
+      </div>
+      <div class="skills__section">
+        <ul>
+          <li>PHP</li>
+          <li>Magento</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skills__section">
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>BitBucket</li>
+          <li>Jira</li>
+          <li>Agile</li>
+        </ul>
+      </div>
+      <div class="skills__section">
+        <ul>
+          <li>English</li>
+          <li>Ukrainian</li>
+        </ul>
+      </div>
+      <div class="skills__mobile-certification">
+        <p>Certifications</p>
+        <div class="swiper certification-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/LKAXHK3MB2PB" class="design-image" target="_blank">
+                <img src="images/certification/html-css.png" alt="front-end-certificate">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/KB9XD92SZEU2" class="design-image" target="_blank">
+                <img src="images/certification/react-basic.png" alt="front-end-certificate">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/certificate/M8PF9NQCY5CD" class="design-image" target="_blank">
+                <img src="images/certification/ux-design.png" alt="design-certificate">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/VEKPPWL3ESUA" class="english-image" target="_blank">
+                <img src="images/certification/english-advanced.png" alt="english-certificate">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EDZTVDKF2WQ8" class="english-image" target="_blank">
+                <img src="images/certification/english-intermediate.png" alt="english-certificate">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/GGTA6RMVUTZV" class="english-image" target="_blank">
+                <img src="images/certification/english-beginner.png" alt="english-certificate">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects block -->
+  <section class="projects" id="projects">
+    <h1 class="projects__title">My projects</h1>
+    <p class="projects__subtitle hidden">
+      I like to invent and create new applications that 
+      will be useful not only to me. These are the works 
+      that I create from the moment of idea, further design 
+      and development. For me it is important that it is 
+      practical and of high quality!</p>
+    <div class="projects__items">
+      <div class="projects__item">
+        <img class="projects__name" src="images/edolynna2.svg" alt="edolynna2">
+        <div class="projects__description">
+          <p>Website like portfolio of Elvira Dolynna</p>
+        </div>
+        <a class="projects__link first-link" href="https://edolynna.github.io/elviradolynna/">
+          <img src="images/share.svg" alt="share">
+          elviradolynna.com
+        </a>
+      </div>
+      <div class="projects__item">
+        <img class="projects__name" src="images/beautymix.svg" alt="beautymix">
+        <div class="projects__description">
+          <p>Beauty shop with professional cosmetics</p>
+        </div>
+        <a class="projects__link second-link" href="#">
+          <img src="images/settings.svg" alt="">
+          in development
+        </a>
+      </div>
+      <div class="projects__item">
+        <img class="projects__name" src="images/greenleaf.svg" alt="greenleaf">
+        <div class="projects__description">
+          <p>Website with information about care of different plants</p>
+        </div>
+        <a class="projects__link third-link" href="#">
+          <img src="images/settings.svg" alt="">
+          in development
+        </a>
+      </div>
+    </div>
+    <button class="show-more">Show more ...</button>
+  </section>
+
+  <!-- Contacts block -->
+  <section class="contacts" id="contact">
+    <div class="contacts__image">
+      <img src="images/edolynna-contact.png" alt="edolynna-contact">
+      <div class="circle"></div>
+    </div>
+    <form class="contacts__form" action="https://formsubmit.co/elviradolynna@gmail.com" method="POST">
+      <div class="box">
+        <h2>Contact with me</h2>
+        <div class="name">
+          <input type="text" name="fname" class="field" placeholder="First name" required>
+          <input type="text" name="lname" class="field" placeholder="Last name" required>
+        </div>
+        <input type="email" name="Email" class="contact-email" placeholder="Email" required>
+        <textarea type="text" name="Message" placeholder="Message ..." class="field" id="textsend" required></textarea>
+        <button class="send">Send</button>
+        <div class="lds-ellipsis" style="display: none;"><div></div><div></div><div></div><div></div></div>
+      </div>
+    </from>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__social-media">
+        <a href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
+        <a href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
+        <a href="https://www.instagram.com/eirafane/" target="_blank" target="_blank">instagram</a>
+      </div>
+      <div class="footer__resume">
+        <a href="images/elvira-dolynna-resume.pdf" download >resume</a>
+        <img src="images/download-white.svg" alt="download-white">
+      </div>
+      <nav class="footer__menu">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>
