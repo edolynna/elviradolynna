@@ -793,6 +793,10 @@
           transform: scale(1.1);
 }
 
+.projects__name {
+  width: 190px;
+}
+
 .projects__name img {
   width: 190px;
 }
@@ -841,16 +845,18 @@
   height: 24px;
 }
 
-.projects .first-link {
+.projects .first-link,
+.projects .second-link {
   color: #0068D1;
   background: #EBF5FF;
 }
 
-.projects .first-link img {
+.projects .first-link img,
+.projects .second-link img {
   fill: #ffffff;
 }
 
-.projects .second-link, .projects .third-link {
+.projects .third-link {
   color: #272727;
   background: #E6E8EB;
 }
