@@ -46,6 +46,9 @@
         width: 190px 
         img 
             width: 190px
+    &__item:nth-child(3)
+        img
+            width: 260px    
     &__description 
         width: 85%
         margin: 20px 0 33px
@@ -56,7 +59,8 @@
             font-weight: 600
             text-align: center
             color: $black
-    &__link
+    &__link,
+    .third-link
         width: 200px
         height: 45px
         display: flex
@@ -75,14 +79,12 @@
             width: 24px
             height: 24px  
     .first-link,
-    .second-link
+    .second-link,
+    .third-link
         color: #0068D1
         background: #EBF5FF
         img 
             fill: $white
-    .third-link    
-        color: $black
-        background: #E6E8EB
     .show-more
         margin: 110px 0 0
         width: 280px
