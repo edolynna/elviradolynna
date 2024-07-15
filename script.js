@@ -12,8 +12,8 @@ function typing() {
 typing();
 
 // Mobile menu
-const mobileMenuBtn = document.querySelector(".home__hamburger");
-const mobileMenu = document.querySelector(".home__mobile-menu");
+const mobileMenuBtn = document.querySelector(".home-section__hamburger");
+const mobileMenu = document.querySelector(".home-section__mobile-menu");
 
 mobileMenuBtn.addEventListener("click", function() {
   mobileMenuBtn.classList.toggle("is-active");

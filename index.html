@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elvira Dolynna</title>
-  <link rel="icon" type="image/x-icon" href="images/beret.ico">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="certification.html" rel="import">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161135981-1"></script>
@@ -23,102 +23,89 @@
 </head>
 <body>
 
-  <!-- Home block -->
-  <div class="home" id="home">
-    <header class="home__menu">
-      <img class="home__logo" src="images/edolynna-logo.svg" alt="edolynna-logo">
-      <nav class="home__navigation">
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <div class="resume">
-          <a href="images/elvira-dolynna-resume.pdf" download>resume</a>
+  <!-- Home section -->
+  <section class="home-section" id="home">
+    <header class="home-section__menu">
+      <img class="home-section__logo" src="images/edolynna-logo.svg" alt="edolynna-logo">
+      <nav class="home-section__navigation">
+        <a class="home-section__link" href="#about">about</a>
+        <a class="home-section__link" href="#skills">skills</a>
+        <a class="home-section__link" href="#projects">projects</a>
+        <a class="home-section__link" href="#contact">contact</a>
+        <div class="home-section__resume">
+          <a class="home-section__link" href="images/elvira-dolynna-resume.pdf" download>resume</a>
           <img src="images/download.svg" alt="download resume">
         </div>
       </nav>
-      <button class="home__hamburger">
-        <div class="bar"></div>
+      <button class="home-section__hamburger">
+        <div class="home-section__bar"></div>
       </button>
-      <nav class="home__mobile-menu">
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <a href="images/elvira-dolynna-resume.pdf" download >resume</a>
-        <a href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
-        <a href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
-        <a href="https://www.instagram.com/eirafane/" target="_blank">instagram</a>
+      <nav class="home-section__mobile-menu">
+        <a class="home__mobile-link" href="#about">about</a>
+        <a class="home__mobile-link" href="#skills">skills</a>
+        <a class="home__mobile-link" href="#projects">projects</a>
+        <a class="home__mobile-link" href="#contact">contact</a>
+        <a class="home__mobile-link" href="images/elvira-dolynna-resume.pdf" download >resume</a>
+        <a class="home__mobile-link" href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
+        <a class="home__mobile-link" href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
+        <a class="home__mobile-link" href="https://www.instagram.com/eirafane/" target="_blank">instagram</a>
       </nav>
     </header>
    
-    <main class="home__content">
-      <div class="home__text">
+    <main class="home-section__content">
+      <div class="home-section__text">
         Hello World,<br/>
         I'm <span id="name"></span><br/>
         a Front-end Developer
       </div>
-      <div class="home__images">
-        <img src="images/edolynna-hi.svg" alt="edolynna-hi">
-        <div class="home__blue-blur"></div>
-        <div class="home__blue-blur-midle"></div>
-        <div class="home__blue-blur-small"></div>
+      <div class="home-section__images">
+        <img src="images/edolynna-hi.png" alt="edolynna-hi" width="512" height="512">
+        <div class="home-section__blue-blur"></div>
+        <div class="home-section__blue-blur-midle"></div>
+        <div class="home-section__blue-blur-small"></div>
       </div>
     </main>
 
-    <div class="home__down-content">
-      <div class="home__left">
+    <div class="home-section__down-content">
+      <div class="home-section__left">
         <a href="https://www.linkedin.com/in/elvira-dolynna-783b001a3/" target="_blank">linkedin</a>
         <a href="mailto:elviradolynna@gmail.com" target="_blank">mail</a>
         <a href="https://www.instagram.com/eirafane/" target="_blank">instagram</a>
       </div>
-      <div class="home__center">
+      <div class="home-section__center">
         <a href="#about" class="scroll-down" onclick="arrowClicked();">
           <span class="first-line"></span>
           <span class="second-line"></span>
         </a>
       </div>
-      <div class="home__right">
+      <div class="home-section__right">
         <h1>ENG</h1>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- About block -->
-  <section class="about" id="about">
-    <div class="about__image">
-      <div class="circle"></div>
-      <img class="elvira-image" src="images/edolynna-about.svg" alt="edolynna-about">
+  <!-- About section -->
+  <section class="about-section" id="about">
+    <div class="about-section__image-container">
+      <div class="about-section__circle"></div>
+      <img class="about-section__image" src="images/edolynna-about.png" alt="Elvira Dolynna" width="512" height="512">
     </div>
-    <div class="about__text hidden">
-      <p>Welcome to my website. I'm Elvira Dolynna and a Front-end Developer with Magento experience. On this moment I already have a Computer Science Bachelor degree and 2 years of work experience.</p>
-      <div class="about__study">
-        <p>Education:</p>
-        <p>Computer Science 2018 - 2022 
-          <br/> 
-          State University of Telecommunications 
-          <br/> 
-          Kyiv, Ukraine 
-        </p>
-      </div>
-      <div class="about__experience">
-        <p>Work experience:</p>
-        <p>Front-end Developer, ODDITY 
-          <br/> 
-          January 2021 - present
-        </p>
-      </div>
-      <p>I open for new communication and new opportunity. My main principle in life is not to stop and always grow as a person and a professional.</p>
+    <div class="about-section__content hidden">
+      <p>Welcome to my website! I'm Elvira Dolynna, a dedicated Front-end Developer with a specialisation in Magento. <br />I hold a Bachelor's degree in Computer Science and have accumulated 3.5 years of professional experience.</p>
+      <p>Bachelor of Computer Science <br/>State University of Telecommunications <br/>Kyiv, Ukraine <br />2018 - 2022</p>
+      <p>Front-end Developer <br/>ODDITY <br />January 2021 - Present</p>
+      <p>My guiding principle in life is to never stop growing, both personally and professionally. Outside of work, I enjoy a variety of hobbies that keep me balanced and inspired. These include running, reading, gardening, and practicing Pilates.</p>
+      <p>I'm open to new experiences and opportunities, and I look forward to connecting with like-minded professionals and exploring innovative projects.</p>
     </div>
   </section>
 
-  <!-- Skills block -->
-  <section class="skills" id="skills">
-    <div class="skills__top">
+  <!-- Skills section -->
+  <section class="skills-section" id="skills">
+    <div class="skills-section__top">
       <div></div>
       <div></div>
       <div>JavaScript</div>
-      <div>SASS</div>
+      <div>SCSS</div>
       <div>PHP</div>
       <div>English</div>
       <div>Ukrainian</div>
@@ -126,8 +113,8 @@
         <a href="certification.html">Certification</a>
       </div>
     </div>
-    <div class="skills__middle">
-      <div>jQuery</div>
+    <div class="skills-section__middle">
+      <div>TypeScript</div>
       <div>React</div>
       <div></div>
       <div>HTML / CSS</div>
@@ -136,16 +123,16 @@
       <div>Figma</div>
       <div>Zeplin</div>
     </div>
-    <div class="skills__down">
+    <div class="skills-section__down">
       <div>Git</div>
-      <div>BitBucket</div>
+      <div>Angular</div>
       <div>Jira</div>
-      <div>Agile</div>
+      <div>Python</div>
       <div></div>
     </div>
 
-    <div class="skills__mobile">
-      <div class="skills__section">
+    <div class="skills-section__mobile">
+      <div class="skills-section__section">
         <ul>
           <li>HTML / CSS</li>
           <li>SASS</li>
@@ -155,14 +142,14 @@
           <li>React</li>
         </ul>
       </div>
-      <div class="skills__section">
+      <div class="skills-section__section">
         <ul>
           <li>PHP</li>
           <li>Magento</li>
           <li>SQL</li>
         </ul>
       </div>
-      <div class="skills__section">
+      <div class="skills-section__section">
         <ul>
           <li>Git</li>
           <li>GitHub</li>
@@ -171,13 +158,13 @@
           <li>Agile</li>
         </ul>
       </div>
-      <div class="skills__section">
+      <div class="skills-section__section">
         <ul>
           <li>English</li>
           <li>Ukrainian</li>
         </ul>
       </div>
-      <div class="skills__mobile-certification">
+      <div class="skills-section__mobile-certification">
         <p>Certifications</p>
         <div class="swiper certification-swiper">
           <div class="swiper-wrapper">
@@ -217,54 +204,51 @@
     </div>
   </section>
 
-  <!-- Projects block -->
-  <section class="projects" id="projects">
-    <h1 class="projects__title">My projects</h1>
-    <p class="projects__subtitle hidden">
-      I like to invent and create new applications that 
-      will be useful not only to me. These are the works 
-      that I create from the moment of idea, further design 
-      and development. For me it is important that it is 
-      practical and of high quality!</p>
-    <div class="projects__items">
-      <div class="projects__item">
-        <img class="projects__name" src="images/edolynna2.svg" alt="edolynna">
-        <div class="projects__description">
+  <!-- Projects section -->
+  <section class="projects-section" id="projects">
+    <h1 class="projects-section__title">My Projects</h1>
+    <p class="projects-section__subtitle hidden">
+      I enjoy inventing and creating new applications that offer practical and high-quality <br/>
+      solutions for a wide range of users. From the initial concept to design  <br/>and development,
+      I'm passionate about every stage of the process.</p>
+    <div class="projects-section__items">
+      <div class="projects-section__item">
+        <img class="projects-section__image" src="images/edolynna2.svg" alt="Project Edolynna">
+        <div class="projects-section__description">
           <p>It's my website about me more like a developer</p>
         </div>
-        <a class="projects__link first-link" href="https://edolynna.github.io/elviradolynna/" target="_blank">
-          <img src="images/share.svg" alt="share">
-          click here
+        <a class="projects-section__link" href="https://edolynna.github.io/elviradolynna/" target="_blank">
+          <img src="images/share.svg" alt="Share">
+          Click here
         </a>
       </div>
-      <div class="projects__item">
-        <img class="projects__name" src="images/todo-app.svg" alt="todo">
-        <div class="projects__description">
+      <div class="projects-section__item">
+        <img class="projects-section__image" src="images/todo-app.svg" alt="Todo App">
+        <div class="projects-section__description">
           <p>It's a simple Todo app for daily using</p>
         </div>
-        <a class="projects__link second-link" href="https://edolynna.github.io/todo-app/" target="_blank">
-          <img src="images/share.svg" alt="share">
-          click here
+        <a class="projects-section__link" href="https://edolynna.github.io/todo-app/" target="_blank">
+          <img src="images/share.svg" alt="Share">
+          Click here
         </a>
       </div>
-      <div class="projects__item">
-        <img class="projects__name" src="images/taketime-app.svg" alt="taketime">
-        <div class="projects__description">
+      <div class="projects-section__item">
+        <img class="projects-section__image" src="images/taketime-app.svg" alt="TakeTime App">
+        <div class="projects-section__description">
           <p>It's a timer that you can use to focus</p>
         </div>
-        <a class="projects__link third-link" href="https://edolynna.github.io/taketime-app/" target="_blank">
-          <img src="images/settings.svg" alt="">
-          click here
+        <a class="projects-section__link" href="https://edolynna.github.io/taketime-app/" target="_blank">
+          <img src="images/share.svg" alt="Share">
+          Click here
         </a>
       </div>
     </div>
-    <button class="show-more">Show more ...</button>
   </section>
 
-  <!-- Contacts block -->
+  <!-- Contacts section -->
   <section class="contacts" id="contact">
     <div class="contacts__image">
-      <img src="images/edolynna-contact.png" alt="edolynna-contact">
+      <img src="images/edolynna-contact.png" alt="edolynna-contact" width="512" height="512">
       <div class="circle"></div>
     </div>
     <form class="contacts__form" action="https://formsubmit.co/elviradolynna@gmail.com" method="POST">

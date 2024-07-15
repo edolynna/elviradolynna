@@ -1,89 +1,97 @@
 @import "_colors"
 
-.about
+.about-section
     padding: 0 70px
-    max-width: 1440px
+    max-width: 90%
     min-height: 100vh
     display: flex
     align-items: center
     justify-content: space-between
     background-color: $white
     margin: 0 auto
-    &__image 
+
+    &__image-container
         width: 45%
         display: flex
         align-items: center
         justify-content: center
         margin-right: 130px
-        .circle
-            width: 480px
-            height: 480px
-            background: $light-blue
-            filter: blur(90px) 
-            border-radius: 50%
-            position: absolute  
-        .elvira-image
-            position: relative
-    &__text
+
+    &__circle
+        width: 480px
+        height: 480px
+        background: $blue
+        filter: blur(90px)
+        border-radius: 50%
+        position: absolute
+
+    &__image
+        position: relative
+
+    &__content
         max-width: 680px
-        p 
-            margin: 0 0 50px
-            font-size: 28px
-            font-family: $inconsolata-font
-            font-weight: 500
+
+        p
+            margin: 0 0 30px
+            font-size: 20px
+            font-family: $robotomono-font
+            font-weight: 400
             text-align: left
             color: $black
-    &__study,
-    &__experience 
-        margin: 0 0 50px
-        p
-            margin: 0 
-        p:first-child
-            font-weight: 600              
     
 @media (min-width: 1200px) and (max-width: 1400px)
-    .about
+    .about-section
         padding: 0 60px
-        &__image
+
+        &__image-container
+
             .circle
                 width: 420px
                 height: 420px
-        &__elvira-image 
-            img 
+
+        &__image
+
+            img
                 width: 480px
                 height: 480px
-        &__text 
-            p
-                font-size: 24px
 
-@media screen and (max-width: 1200px) 
-    .about   
-        &__image
-            display: none 
-        &__text 
+        &__content
+
+            p
+                font-size: 20px
+
+@media screen and (max-width: 1200px)
+    .about-section
+        &__image-container
+            display: none
+
+        &__content
             margin: 0
             max-width: 100%
             height: 90vh
             display: flex
             flex-direction: column
             justify-content: space-around
-            p 
-                margin: 0
-        &__study
-            margin: 0
-        &__experience
-            margin: 0
+
+            p
+                margin: 0 0 10px
 
 @media screen and (min-width: 768px) and (max-width: 1200px)
-    .about 
-        padding: 32px 24px 0   
-        &__text 
-            p 
-                font-size: 24px
+    .about-section
+        padding: 32px 24px 0
 
-@media (max-width: 767px) 
-    .about
-        padding: 24px
-        &__text  
-            p 
+        &__content
+            
+            p
                 font-size: 20px
+
+@media (max-width: 767px)
+    .about-section
+        padding: 24px
+        height: fit-content
+        min-height: fit-content
+
+        &__content
+
+            p
+                font-size: 18px

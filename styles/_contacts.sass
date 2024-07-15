@@ -2,90 +2,106 @@
 
 .contacts
     padding: 0 70px
-    max-width: 1440px
+    max-width: 100%
     min-height: 100vh
     display: flex
     align-items: center
     justify-content: space-around
     background-color: $white
     margin: 0 auto
-    &__image 
+
+    &__image
         display: flex
         align-items: center
         justify-content: center
         position: relative
-        img 
+
+        img
             z-index: 1
-        .circle 
+
+        .circle
             margin-right: 55px
             width: 500px
             height: 500px
-            background: $blue-background
+            background: $blue
             filter: blur(70px)
             border-radius: 50%
             position: absolute
+
     &__form 
         width: 620px
         height: auto
         display: flex
         flex-direction: column
         align-items: center
-        .box 
+
+        .box
             width: 100%
             display: flex
             flex-direction: column
             align-items: center
-            h2 
+
+            h2
                 margin: 0 0 52px
-                font-size: 38px
-                font-family: $inconsolata-font
+                font-size: 46px
+                font-family: $robotomono-font
                 font-weight: 500
-                color: $blue
+                color: $black
+
             .name
                 width: 100%
                 display: flex
                 flex-direction: row
                 align-items: center
                 justify-content: space-between
+
                 input
                     width: 45%
+
             input, textarea 
                 width: 97%
-                font-size: 24px
-                font-family: $inconsolata-font
+                font-size: 20px
+                font-family: $robotomono-font
                 color: $black
                 background-color: #f2f2f2
                 border: none
                 border-radius: 25px
                 margin-bottom: 34px
+
             input
                 height: 60px
+
             input[type="text" i]
                 padding: 0 0 0 20px
+                
             textarea 
                 height: 160px
                 padding: 20px 0 0 20px
+
             .contact-email
                 padding: 0 0 0 20px
-            .send 
+
+            .send
                 width: 100%
                 height: 72px
-                font-size: 32px
-                font-family: $inconsolata-font
-                font-weight: 600
+                font-size: 28px
+                font-family: $robotomono-font
+                font-weight: 500
                 color: $white
                 background-color: $black
                 border: none
                 border-radius: 25px
                 cursor: pointer
+
             .lds-ellipsis
                 width: 100%
                 height: 72px
                 background-color: $black
                 border: none
                 border-radius: 25px
-                position: relative 
-                div 
+                position: relative
+
+                div
                     position: absolute
                     top: 30px
                     width: 13px
@@ -93,107 +109,142 @@
                     border-radius: 50%
                     background: $white
                     animation-timing-function: cubic-bezier(0, 1, 1, 0)
+
                 div:nth-child(1)
                     left: 288px
                     animation: lds-ellipsis1 0.6s infinite
-                div:nth-child(2) 
+
+                div:nth-child(2)
                     left: 288px
                     animation: lds-ellipsis2 0.6s infinite
-                div:nth-child(3) 
+
+                div:nth-child(3)
                     left: 312px
                     animation: lds-ellipsis2 0.6s infinite
-                div:nth-child(4) 
+
+                div:nth-child(4)
                     left: 336px
                     animation: lds-ellipsis3 0.6s infinite
                 
-            @keyframes lds-ellipsis1 
-                0% 
+            @keyframes lds-ellipsis1
+                0%
                     transform: scale(0)
                 
-                100% 
+                100%
                     transform: scale(1)
                 
-            @keyframes lds-ellipsis3 
-                0% 
+            @keyframes lds-ellipsis3
+                0%
                     transform: scale(1)
                 
-                100% 
+                100%
                     transform: scale(0)
             
-            @keyframes lds-ellipsis2 
-                0% 
+            @keyframes lds-ellipsis2
+                0%
                     transform: translate(0, 0)
                 
-                100% 
-                    transform: translate(24px, 0)     
+                100%
+                    transform: translate(24px, 0)
 
 @media screen and (max-width: 1200px)
     .contacts
         padding: 32px 24px
+        min-height: fit-content
         flex-direction: column-reverse
+
         &__image
-            img 
+
+            img
+                display: none
                 width: 280px
                 height: 280px
-            .circle 
+
+            .circle
                 display: none
-        &__form 
+
+        &__form
             width: 100%
-            .box 
+
+            .box
+
                 h2
                     font-weight: 600
-                input 
+
+                input
                     height: 38px
-                input, textarea, .send, .lds-ellipsis 
+
+                input, textarea, .send, .lds-ellipsis
                     font-size: 16px
                     border-radius: 16px
+
                 input, textarea
-                    width: 98.5%;
+                    width: 98.5%
+
                 input[type="text" i], textarea, .contact-email
                     margin-bottom: 30px
+
                 textarea
                     height: 104px
-                .lds-ellipsis 
-                    div 
+
+                .lds-ellipsis
+
+                    div
                         top: 20px
                         width: 10px
                         height: 10px
+
                     div:nth-child(1)
                         left: 44%
+
                     div:nth-child(2)
                         left: 42%
+
                     div:nth-child(3)
                         left: 47%
+
                     div:nth-child(4)
                         left: 53%
 
 @media screen and (min-width: 768px) and (max-width: 1200px)
     .contacts
-        &__form 
+
+        &__form
             width: 100%
+
             .box
-                h2 
-                    font-size: 42px
+
+                h2
+                    font-size: 40px
+
                 input
                     height: 48px
+
                 textarea 
                     height: 144px
+
                 input[type="text" i]
                     width: 46%
 
-@media (max-width: 767px) 
+@media (max-width: 767px)
     .contacts
-        &__form 
+
+        &__form
             width: 100%
+
             .box 
+
                 h2
-                    font-size: 28px
-                    line-height: 28px
+                    font-size: 26px
+                    line-height: 26px
                     margin-bottom: 32px
+
                 .send, .lds-ellipsis
                     height: 48px
-                    font-size: 20px
+                    font-size: 18px
+
                 input, textarea
                     width: 94%
+
                 input[type="text" i]
                     width: 42%
