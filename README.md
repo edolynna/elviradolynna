@@ -17,15 +17,12 @@
 
 <!-- Technologies Used -->
 <h2 align="left">Technologies Used</h2>
-<p align="left">HTML, CSS (SCSS), JavaScript, Swiper.js</p>
+<p align="left">HTML, CSS (SASS), JavaScript, Swiper.js</p>
 
 <!-- Usage -->
 <h2 align="left">Usage</h2>
 <ul align="left">
   <li><strong>View Online:</strong> Visit the live website at <a href="https://edolynna.github.io/elviradolynna/">https://edolynna.github.io/elviradolynna/</a>.</li>
-  <li><strong>Clone Repository:</strong> Clone the repository using <code>git clone https://github.com/edolynna/elviradolynna.git</code>.</li>
-  <li><strong>Install Dependencies:</strong> Install necessary dependencies with <code>npm install</code> or <code>yarn install</code>.</li>
-  <li><strong>Run Locally:</strong> Start the local server with <code>npm start</code> or <code>yarn start</code> and visit <code>http://localhost:3000</code>.</li>
 </ul>
 
 <!-- Acknowledgements -->
