@@ -1,8 +1,5 @@
 @import "_colors"
 
-$font-size-small: 12px
-$font-size-medium: 14px
-$font-size-large: 18px
 $border-radius: 50%
 $transition-duration: .3s
 $box-shadow-small: 0 0 10px 2px $white
@@ -26,6 +23,7 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
     display: flex
     align-items: center
     justify-content: center
+    font-size: 12px
 
     div
       display: flex
@@ -46,173 +44,161 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
   &__top
 
     div:nth-child(1)
-        width: 36px
-        height: 36px
-        top: 230px
-        left: 400px
-        background-color: $white
-        box-shadow: $box-shadow-small
+      top: 230px
+      left: 400px
+      width: 36px
+      height: 36px
+      background-color: $white
+      box-shadow: $box-shadow-small
 
     div:nth-child(2)
-        width: 50px
-        height: 50px
-        top: 180px
-        left: 260px
-        background-color: $white
-        box-shadow: $box-shadow-small
+      width: 50px
+      height: 50px
+      top: 180px
+      left: 260px
+      background-color: $white
+      box-shadow: $box-shadow-small
 
     div:nth-child(3)
-        width: 120px
-        height: 120px
-        font-size: $font-size-medium
-        margin-right: 360px
-        margin-bottom: 50px
-        box-shadow: 0 0 55px 2px $blue
+      width: 120px
+      height: 120px
+      margin-right: 360px
+      margin-bottom: 50px
+      box-shadow: 0 0 55px 2px $blue
 
     div:nth-child(4)
-        width: 62px
-        height: 62px
-        font-size: $font-size-medium
-        margin-bottom: 350px
-        margin-right: 90px
-        box-shadow: 0 0 28px 2px $blue   
+      width: 62px
+      height: 62px
+      margin-right: 90px
+      margin-bottom: 350px
+      box-shadow: 0 0 28px 2px $blue   
 
     div:nth-child(5)
-        width: 110px
-        height: 110px
-        font-size: $font-size-medium
-        margin-bottom: 180px
-        margin-left: 200px
-        box-shadow: $box-shadow-large
+      width: 95px
+      height: 95px
+      margin-left: 200px
+      margin-bottom: 180px
+      box-shadow: $box-shadow-large
 
     div:nth-child(6), div:nth-child(7)
-        width: 104px
-        height: 104px
-        font-size: $font-size-medium
-        box-shadow: $box-shadow-large   
+      width: 104px
+      height: 104px
+      box-shadow: $box-shadow-large   
 
     div:nth-child(6)
-        margin-left: 410px
-        margin-top: 100px
+      margin-top: 100px
+      margin-left: 410px
 
     div:nth-child(7)
-        margin-bottom: 260px
-        margin-left: 600px
+      margin-left: 600px
+      margin-bottom: 260px
 
     div:nth-child(8)
-        width: 120px
-        height: 120px
-        margin-left: 970px
-        margin-bottom: 500px
-        box-shadow: 0 0 24px 2px $blue
+      width: 120px
+      height: 120px
+      margin-left: 970px
+      margin-bottom: 500px
+      box-shadow: 0 0 24px 2px $blue
         
-        a
-            text-decoration: none
-            font-size: $font-size-small
-            color: $white    
+      a
+        text-decoration: none
+        color: $white
 
   &__middle
 
     div:nth-child(1)
-        width: 90px
-        height: 90px
-        font-size: $font-size-small
-        margin-right: 700px
-        margin-bottom: 50px
-        box-shadow: $box-shadow-medium
+      width: 90px
+      height: 90px
+      margin-right: 700px
+      margin-bottom: 50px
+      box-shadow: $box-shadow-medium
 
     div:nth-child(2)
-        width: 84px
-        height: 84px
-        margin-top: 200px
-        margin-right: 520px
-        box-shadow: $box-shadow-medium
+      margin-top: 200px
+      margin-right: 520px
+      width: 84px
+      height: 84px
+      box-shadow: $box-shadow-medium
 
     div:nth-child(3)
-        width: 50px
-        height: 50px
-        margin-top: 200px
-        margin-right: 230px
-        box-shadow: 0 0 15px 2px $blue
+      margin-top: 200px
+      margin-right: 230px
+      width: 50px
+      height: 50px
+      box-shadow: 0 0 15px 2px $blue
 
     div:nth-child(4)
-        width: 170px
-        height: 170px
-        box-shadow: $box-shadow-extra-large
-        position: relative
+      width: 170px
+      height: 170px
+      font-size: 16px
+      box-shadow: $box-shadow-extra-large
+      position: relative
 
     div:nth-child(5)
-        width: 116px
-        height: 116px 
-        font-size: $font-size-medium
-        margin-top: 460px
-        margin-right: 14px
-        box-shadow: 0 0 50px 2px $blue
+      margin-top: 460px
+      margin-right: 14px
+      width: 116px
+      height: 116px
+      box-shadow: 0 0 50px 2px $blue
 
     div:nth-child(6)
-        width: 96px
-        height: 96px 
-        font-size: $font-size-medium
-        margin-top: 320px
-        margin-left: 300px
-        box-shadow: 0 0 25px 2px $blue
+      margin-top: 320px
+      margin-left: 300px
+      width: 96px
+      height: 96px 
+      box-shadow: 0 0 25px 2px $blue
 
     div:nth-child(7)
-        width: 80px
-        height: 80px
-        font-size: $font-size-medium
-        margin-top: 115px
-        margin-left: 670px
-        box-shadow: 0 0 25px 2px $blue
+      margin-top: 115px
+      margin-left: 670px
+      width: 80px
+      height: 80px
+      box-shadow: 0 0 25px 2px $blue
 
     div:nth-child(8)
-        width: 65px
-        height: 65px
-        font-size: $font-size-small
-        margin-top: 300px
-        margin-left: 860px
-        box-shadow: 0 0 15px 2px $blue    
+      margin-top: 380px
+      margin-left: 860px
+      width: 70px
+      height: 70px
+      box-shadow: 0 0 15px 2px $blue    
 
   &__down
 
     div:nth-child(1)
-        width: 80px
-        height: 80px
-        font-size: $font-size-medium
-        margin-top: 220px
-        margin-right: 850px
-        box-shadow: 0 0 25px 2px $blue
+      margin-top: 220px
+      margin-right: 850px
+      width: 80px
+      height: 80px
+      box-shadow: 0 0 25px 2px $blue
 
     div:nth-child(2)
-        width: 90px
-        height: 90px
-        font-size: $font-size-small
-        margin-top: 370px
-        margin-right: 520px
-        box-shadow: $box-shadow-large
+      margin-top: 370px
+      margin-right: 520px
+      width: 90px
+      height: 90px
+      box-shadow: $box-shadow-large
 
     div:nth-child(3)
-        margin-top: 500px
-        margin-left: 250px
+      margin-top: 500px
+      margin-left: 250px
 
     div:nth-child(4) 
-        margin-top: 280px
-        margin-left: 550px
+      margin-top: 280px
+      margin-left: 550px
 
     div:nth-child(3),
     div:nth-child(4)
-        width: 66px
-        height: 66px
-        font-size: $font-size-small
-        box-shadow: 0 0 20px 2px $blue
+      width: 66px
+      height: 66px
+      box-shadow: 0 0 20px 2px $blue
 
     div:nth-child(5)
-        width: 36px
-        height: 36px
-        right: 240px
-        bottom: 80px
-        background-color: $white
-        box-shadow: $box-shadow-small
+      width: 36px
+      height: 36px
+      right: 240px
+      bottom: 80px
+      background-color: $white
+      box-shadow: $box-shadow-small
 
   &__mobile
     display: none
@@ -223,8 +209,8 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
   background-color: $white
 
   h1
-    font-size: 38px
-    line-height: 38px
+    font-size: 46px
+    line-height: 46px
     font-family: $robotomono-font
     font-weight: 500
     margin-bottom: 80px
@@ -234,7 +220,7 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
 
     p
       margin: 0 0 35px 0
-      font-size: 28px
+      font-size: 20px
       font-family: $robotomono-font
       font-weight: 400
 
@@ -275,6 +261,7 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
 
 @media screen and (min-width: 768px) and (max-width: 1279px)
   .skills-section
+    padding: 40px 0
     width: 100%
     height: auto
     min-height: 100vh
@@ -313,16 +300,6 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
           border-radius: 10px
           color: $white
 
-    &__mobile-certification
-      padding: 32px 24px 0
-
-      p
-        font-size: 24px
-        line-height: 24px
-        text-align: left
-        font-family: "Inconsolata", monospace
-        font-weight: 300
-
       .certification-swiper
         width: 100%
         height: 131px
@@ -338,7 +315,6 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
         justify-content: center
         align-items: center
         text-align: center
-        font-size: $font-size-large
         border-radius: 10px
 
         img
@@ -349,7 +325,7 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
 
 @media (max-width: 767px)
   .skills-section
-    padding: 50px 0
+    padding: 30px 0
     width: 100%
     height: fit-content
     min-height: fit-content
@@ -382,7 +358,6 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
           font-size: 16px
           line-height: 16px
           font-family: $robotomono-font
-          font-weight: 300
           text-align: center
           color: $white
           background-color: $blue
@@ -398,17 +373,7 @@ $box-shadow-extra-large: 0 0 80px 2px $blue
         border-radius: 10px
 
         p
-          font-size: $font-size-medium
           line-height: 14px
           font-family: $robotomono-font
           font-weight: 300
           text-align: left
-
-    &__mobile-certification
-      padding: 0 24px
-      display: none
-
-      p
-        font-size: 16px
-        line-height: 16px
-        font-family: "Inconsolata", monospace

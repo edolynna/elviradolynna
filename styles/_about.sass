@@ -62,6 +62,8 @@
 
 @media screen and (max-width: 1200px)
     .about-section
+        padding: 40px 32px
+
         &__image-container
             display: none
 
@@ -74,11 +76,11 @@
             justify-content: space-around
 
             p
-                margin: 0 0 10px
+                margin: 0
 
 @media screen and (min-width: 768px) and (max-width: 1200px)
     .about-section
-        padding: 32px 24px 0
+        padding: 40px 32px
 
         &__content
             
@@ -87,11 +89,14 @@
 
 @media (max-width: 767px)
     .about-section
-        padding: 24px
+        padding: 30px 24px
         height: fit-content
         min-height: fit-content
 
         &__content
 
             p
-                font-size: 18px
+                margin: 0 0 15px
+                font-size: 16px
+                br 
+                    display: none

@@ -45,27 +45,13 @@ body
         font-weight: 400
         
     &__link
-        margin: 0 32px
+        margin: 0 0 0 64px
         text-decoration: none
-        text-transform: lowercase
         color: $black
     &__link:hover
-            padding-bottom: 3px
-            border-bottom: 3px solid $blue
-
-    &__resume
-        display: flex
-        align-items: center
-
-        a
-            margin: 0 0 0 32px
-            color: $black
-            text-decoration: none
-
-        img
-            width: 20px
-            height: 20px
-            margin-left: 10px
+        color: $blue
+        transform: scale(1.1)
+        transition: transform .2s
 
     &__hamburger, &__mobile-menu
         display: none
@@ -137,15 +123,13 @@ body
         position: absolute
 
         a
+            margin: 0 36px 0 0
             font-size: 20px
             font-family: $robotomono-font
             font-weight: 400
             text-decoration: none
             color: $black
             transition: transform .2s
-
-        a:nth-child(2) 
-            margin: 0 36px
 
         a:hover
             color: $blue
@@ -191,15 +175,6 @@ body
 
             .first-line, .second-line
                 animation: none
-
-    &__right
-        right: 0
-        position: absolute
-
-        h1 
-            font-size: 32px
-            font-family: $robotomono-font
-            font-weight: 400
 
 // Styles for scroll animation
 .hidden
@@ -253,13 +228,10 @@ body
                 height: 26px
                 margin: 6px
 
-        &__right
-            font-size: 24px
-
 @media screen and (max-width: 1200px)
     .home-section
+        padding: 40px 32px
         justify-content: space-between
-        padding: 32px 24px 0
 
         &__logo
             width: 140px
@@ -296,7 +268,7 @@ body
 
         &__hamburger::before, &__hamburger::after
             content: ""
-            margin: 3px 0
+            margin: 5px 0
             width: 100%
             height: 3px
             display: block
@@ -336,7 +308,6 @@ body
             a
                 font-size: 20px
                 font-family: $robotomono-font
-                font-weight: 300
                 color: $white
                 text-decoration: none
                 margin-bottom: 5%
@@ -368,6 +339,12 @@ body
 
 @media (max-width: 767px)
     .home-section 
+        padding: 30px 24px
+
+        &__mobile-menu.is-active
+
+            a
+                margin-bottom: 25px
 
         &__content
             margin-top: 18%
@@ -398,3 +375,6 @@ body
                 margin: 6px
                 width: 4px
                 height: 26px
+
+        &__down-content 
+            padding-bottom: 30px

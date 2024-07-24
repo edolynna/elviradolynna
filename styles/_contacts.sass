@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 1200px)
     .contacts
-        padding: 32px 24px
+        padding: 40px 24px
         min-height: fit-content
         flex-direction: column-reverse
 
@@ -208,6 +208,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px)
     .contacts
+        padding: 40px 32px
 
         &__form
             width: 100%
@@ -215,7 +216,8 @@
             .box
 
                 h2
-                    font-size: 40px
+                    margin: 0 0 40px
+                    font-size: 42px
 
                 input
                     height: 48px
@@ -228,6 +230,7 @@
 
 @media (max-width: 767px)
     .contacts
+        padding: 30px 24px
 
         &__form
             width: 100%
@@ -237,14 +240,17 @@
                 h2
                     font-size: 26px
                     line-height: 26px
-                    margin-bottom: 32px
+                    margin-bottom: 28px
 
                 .send, .lds-ellipsis
                     height: 48px
-                    font-size: 18px
+                    font-size: 16px
 
                 input, textarea
                     width: 94%
 
                 input[type="text" i]
                     width: 42%
+
+                input[type="text" i], textarea, .contact-email
+                    margin-bottom: 28px    
