@@ -4,6 +4,12 @@
 <!-- Description -->
 <p align="left">Welcome to my personal website! This project showcases my portfolio as a Front-end Developer, detailing my skills, projects, and contact information.</p>
 
+<!-- Design -->
+<h2 align="left">Design</h2>
+<p align="left">
+    <img src="design/elvira-dolynna-design.png" alt="Elvira Dolynna Design" width="500">
+</p>
+
 <!-- Features -->
 <h2 align="left">Features</h2>
 <ul align="left">
